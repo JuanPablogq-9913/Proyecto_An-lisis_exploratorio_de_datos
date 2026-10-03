@@ -1,0 +1,16 @@
+[project]
+name = "eda-dashboard"
+version = "1.0.0"
+description = "Tablero de análisis exploratorio de datos educativos (Actividad Colaborativa I)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "ARG"]
